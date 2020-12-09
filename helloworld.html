@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 可以将js代码编写在外部js文件中，然后通过script标签引入，写到外部文件中可以在不同的页面中同时引入，也可以利用到浏览器的缓存机制 -->
+    <!-- script标签一旦引入外部文件了，就不能在编写代码了，即使编写了浏览器也会忽略 -->
+    <!-- 如果需要可以再新建一个 -->
+    <script src="helloworldscript.js">
+        alert("我在内部的文件中");
+    </script>
+
+    <!--JS代码需要编写到script标签中-->
+    <!-- <script>
+        //控制浏览器弹出警告框
+       alert("Hello World");
+       //在页面中输出内容
+       document.write("看不出来吧~~~");
+       //向控制台输出内容
+       console.log("这下看不出来吧");
+    </script> -->
+    
+</head>
+<body>
+    <!-- onclick当我们点击标签时会执行 -->
+    <button onclick="alert('有何贵干');">点我一下</button>
+    <!-- 在javascript：后直接加；可以不返回信息 -->
+    <a href="javascript:;">别点我</a>
+    <a href="javascript:alert('＞﹏＜')">别点他</a>
+    <!--虽然可以写在标签中，但是他们属于结构与行为耦合，不方便维护  -->
+</body>
+</html>
